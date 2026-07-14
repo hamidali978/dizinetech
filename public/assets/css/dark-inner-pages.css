@@ -316,3 +316,415 @@ header.inner-page .nav-right .mobile-menu-btn svg {
 .blog-card .card-content h5 a {
     color: #ffffff;
 }
+
+/* =========================================================================
+   PART 2 — FULL SITE DARK PASS
+   Covers: header (all inner-page variants + sticky state + dropdown),
+   right sidebar panel, generic section titles, forms/inputs, dropdowns,
+   feature/about cards, testimonial cards, pricing cards, the Contact
+   page's own markup and the Career page's dedicated markup.
+   ========================================================================= */
+
+/* ---------- Header — every non-"three" variant (inner-page AND the plain
+   "style-1" used on the Contact page) ---------- */
+header.style-1:not(.three) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+header.style-1:not(.three).sticky {
+    background-color: #0E1117;
+}
+
+header.style-1:not(.three) .main-menu ul>li>a {
+    color: #ffffff;
+}
+
+header.style-1:not(.three) .main-menu ul>li i {
+    color: #ffffff;
+}
+
+header.style-1:not(.three) .main-menu ul>li ul.sub-menu {
+    background-color: #161B22;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+header.style-1:not(.three) .main-menu ul>li ul.sub-menu>li a {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+header.style-1:not(.three) .main-menu ul>li ul.sub-menu>li:last-child .sub-menu li a {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+header.style-1:not(.three) .nav-right .right-sidebar-button svg,
+header.style-1:not(.three) .nav-right .mobile-menu-btn svg {
+    fill: #ffffff;
+}
+
+/* ---------- Right "Drop us a line" sidebar panel (shared by every page) ---------- */
+.right-sidebar-menu {
+    background-color: #12141C;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.4);
+}
+
+.right-sidebar-menu .sidebar-logo-area {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.right-sidebar-menu .right-sidebar-close-btn {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.right-sidebar-menu .right-sidebar-close-btn i {
+    color: #ffffff;
+}
+
+.right-sidebar-menu .sidebar-content-wrap .title-area h2 {
+    color: #ffffff;
+}
+
+.right-sidebar-menu .sidebar-content-wrap .title-area p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.right-sidebar-menu .sidebar-content-wrap .title-area span svg {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.right-sidebar-menu .sidebar-content-wrap .contact-area .single-contact .content::after {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.right-sidebar-menu .sidebar-content-wrap .contact-area .single-contact .content span {
+    color: #ffffff;
+}
+
+.right-sidebar-menu .sidebar-content-wrap .contact-area .single-contact .content h6 a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.right-sidebar-menu .sidebar-content-wrap .social-area h6 {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.right-sidebar-menu .sidebar-content-wrap .social-area .social-list a i,
+.right-sidebar-menu .sidebar-content-wrap .social-area .social-list a span {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ---------- Breadcrumb extras ---------- */
+.breadcrumb-section .breadcrumb-list li::before {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.breadcrumb-section .scroll-down-btn a {
+    background-color: #161B22;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumb-section .scroll-down-btn a svg {
+    stroke: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Generic section title (used across almost every inner section) ---------- */
+.section-title h2 {
+    color: #ffffff;
+}
+
+.section-title h2 span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.section-title p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section-title.three h2 {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.section-title.three h2 span {
+    color: #ffffff;
+}
+
+/* ---------- Home1 Feature section (About page) ---------- */
+.home1-feature-section {
+    background-color: #0E1117;
+}
+
+.feature-card {
+    background-color: #161B22;
+}
+
+.feature-card .icon {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.feature-card .content h5 {
+    color: #ffffff;
+}
+
+.feature-card .content p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------- Home1 About extras (about-feature-card, section-top-content link) ---------- */
+.home1-about-section .about-feature-card {
+    background-color: #161B22;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.home1-about-section .about-feature-card .icon svg {
+    fill: var(--primary-color);
+}
+
+.home1-about-section .about-feature-card .content h4 {
+    color: #ffffff;
+}
+
+.home1-about-section .about-feature-card .content p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.home1-about-section .section-top-content p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.home1-about-section .about-bottom-content .content-and-btn p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ---------- Home1 Service extras ---------- */
+.home1-service-section .service-card .content a span {
+    color: #ffffff;
+}
+
+/* ---------- Testimonial card (About page) ---------- */
+.testimonial-card {
+    background-color: #161B22;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.testimonial-card .author-and-quote-area {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.testimonial-card .author-and-quote-area .author-area .author-name-and-desig h4 {
+    color: #ffffff;
+}
+
+.testimonial-card .author-and-quote-area .author-area .author-name-and-desig span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonial-card .author-and-quote-area .quote {
+    fill: rgba(255, 255, 255, 0.05);
+}
+
+.testimonial-card .testimonial-content p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* ---------- Pricing cards — extra states not covered in part 1 ---------- */
+.pricing-card {
+    background-color: #161B22;
+}
+
+.pricing-card.st-plan1 {
+    background-color: #20263A;
+}
+
+.pricing-card .pricing-content ul li {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.pricing-card .pricing-form .primary-btn2 {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+/* ---------- Forms — used on the Contact page and anywhere else .form-inner appears ---------- */
+.form-inner label {
+    color: #ffffff;
+}
+
+.form-inner input,
+.form-inner textarea {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-inner input::placeholder,
+.form-inner textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-inner2 .form-check .form-check-label {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.form-check-input {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* ---------- Nice-select dropdown (used by SelectComponent everywhere) ---------- */
+.nice-select {
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+}
+
+.nice-select .current {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nice-select::after {
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+}
+
+.nice-select:focus {
+    background-color: transparent;
+}
+
+.nice-select .list {
+    background-color: #161B22;
+}
+
+.nice-select .list::-webkit-scrollbar-track {
+    background: #0E1117;
+}
+
+.nice-select .list .option {
+    color: #ffffff;
+    background-color: #161B22;
+}
+
+.nice-select .list .option:hover,
+.nice-select .list .option.selected.focus {
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+/* ---------- Contact page specifics ---------- */
+.home4-contact-section {
+    background-color: #0E1117;
+}
+
+.home4-contact-section .contact-wrapper .section-title.three svg {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.home4-contact-section .contact-wrapper ul .single-contact .content h6 a {
+    color: #ffffff;
+}
+
+.home4-contact-section .contact-form-wrap {
+    background-color: #161B22;
+    box-shadow: none;
+}
+
+.contact-map-section iframe {
+    filter: invert(92%) hue-rotate(180deg) contrast(90%);
+    display: block;
+}
+
+/* ---------- Career page ---------- */
+.career-page .review-and-counter-area {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.career-page .review-and-counter-area .counter-wrap {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.career-page .review-and-counter-area .counter-wrap .single-counter {
+    border-right-color: rgba(255, 255, 255, 0.1);
+}
+
+.career-page .review-and-counter-area .counter-wrap .single-counter .icon svg {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.career-page .review-and-counter-area .counter-wrap .single-counter .content .number h2,
+.career-page .review-and-counter-area .counter-wrap .single-counter .content .number>span {
+    color: #ffffff;
+}
+
+.career-page .review-and-counter-area .counter-wrap .single-counter .content p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.career-page .review-and-counter-area .review-area .review-name span,
+.career-page .review-and-counter-area .review-area .review span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.career-page .position-apply-area .content p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.career-page .position-apply-area .content a:hover {
+    color: var(--primary-color);
+}
+
+.career-page .position-apply-area .content a:hover svg {
+    fill: var(--primary-color);
+}
+
+.fact-and-benefits-section .eg-card-2 {
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: #161B22;
+}
+
+.fact-and-benefits-section .eg-card-2 .sl-no h3 {
+    color: rgba(var(--primary-color-opc), 0.4);
+}
+
+.fact-and-benefits-section .eg-card-2 .icon svg {
+    fill: rgba(255, 255, 255, 0.75);
+}
+
+.fact-and-benefits-section .eg-card-2 .content h5 {
+    color: #ffffff;
+}
+
+.fact-and-benefits-section .eg-card-2 .content p {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.job-post-section {
+    background-color: #0E1117;
+}
+
+.job-post-section .single-job-card {
+    background-color: #161B22;
+}
+
+.job-post-section .single-job-card .job-list-content .post-name h4 {
+    color: #ffffff;
+}
+
+.job-post-section .single-job-card .job-list-content .post-name span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.job-post-section .single-job-card .job-list-content .job-discription ul li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.job-post-section .single-job-card .job-list-content .job-discription ul li span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.job-post-section .single-job-card .job-list-content .job-discription ul li::before {
+    border-color: rgba(255, 255, 255, 0.35);
+}
