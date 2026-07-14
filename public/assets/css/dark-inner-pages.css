@@ -1,0 +1,318 @@
+/* =========================================================================
+   DARK THEME — INNER PAGE OVERRIDES
+   ---------------------------------------------------------------------
+   Why this file exists:
+   The "digital-marketing" home page is dark because its own components
+   (Home5Service, Home5about, Home5Footer, etc.) hardcode dark colors.
+   Every other page (Services, Service Details, About, etc.) reuses a
+   different, shared set of components (Header "inner-page", Breadcrum,
+   Home1Service, Home1Pricing, Home1WhyChooseus, LogoSection1, Footer1...)
+   that all rely on global light-theme variables (--title-color,
+   --paragraph-color, --white-color) used in 300+ places across the whole
+   template. Those variables can't just be flipped globally — many of the
+   SAME variables are also used for white text/badges on colored buttons
+   throughout the site, so a blind swap would break unrelated elements.
+
+   Instead, this file explicitly re-styles the specific shared component
+   classes used on inner pages, without touching the shared variables or
+   the digital-marketing-home dark sections. Add more component blocks
+   here as you extend dark styling to more pages.
+   ========================================================================= */
+
+body {
+    background-color: #0E1117;
+}
+
+/* ---------- Header (inner-page variant) ---------- */
+header.inner-page {
+    background-color: #0E1117;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+header.inner-page .main-menu>ul>li>a {
+    color: #ffffff;
+}
+
+header.inner-page .main-menu>ul>li .submenu a {
+    color: #ffffff;
+}
+
+header.inner-page .nav-right .right-sidebar-button svg,
+header.inner-page .nav-right .mobile-menu-btn svg {
+    fill: #ffffff;
+}
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb-section {
+    background-color: #0E1117;
+}
+
+.breadcrumb-section .banner-content h1 {
+    color: #ffffff;
+}
+
+.breadcrumb-section .breadcrumb-list li {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb-section .breadcrumb-list li a {
+    color: var(--primary-color);
+}
+
+/* ---------- Home1 Service section (Services page) ---------- */
+.home1-service-section {
+    background: #0E1117;
+}
+
+.home1-service-section .section-title h2,
+.home1-service-section .section-title span.sub-title {
+    color: #ffffff;
+}
+
+.home1-service-section .service-card {
+    background-color: #161B22;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.home1-service-section .service-card .icon svg {
+    fill: #ffffff;
+}
+
+.home1-service-section .service-card .content h4 {
+    color: #ffffff;
+}
+
+.home1-service-section .service-card .content p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------- Service Details content ---------- */
+.service-details-page {
+    background-color: #0E1117;
+}
+
+.service-details-page h1,
+.service-details-page h2,
+.service-details-page h3,
+.service-details-page h4,
+.service-details-page h5,
+.service-details-page h6 {
+    color: #ffffff;
+}
+
+.service-details-page p,
+.service-details-page li {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---------- Pricing cards (shared by Services & Service Details) ---------- */
+.home1-pricing-plan-section {
+    background: #0E1117;
+}
+
+.pricing-card {
+    background-color: #161B22;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.pricing-card .pricing-top>span,
+.pricing-card-wrap span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pricing-card .pricing-top h2,
+.pricing-card h2,
+.pricing-card h3,
+.pricing-card h4 {
+    color: #ffffff;
+}
+
+.pricing-plan-tab-area span {
+    color: #ffffff;
+}
+
+/* ---------- Why Choose Us section ---------- */
+.home1-why-choose-section {
+    background: #0E1117;
+}
+
+.home1-why-choose-section .why-choose-content .feature-list h6 {
+    color: #ffffff;
+}
+
+.home1-why-choose-section .why-choose-content .feature-list h6 span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.home1-why-choose-section .why-choose-content .feature-list ul li {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.home1-why-choose-section .why-choose-content .feature-list ul li strong {
+    color: #ffffff;
+}
+
+/* ---------- Logo / client marquee section ---------- */
+.logo-section {
+    background: #0E1117;
+}
+
+.logo-section .logo-wrap .logo-title h6 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.logo-section .marquee a img {
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+}
+
+/* ---------- Footer (Footer1 — NOT the dark-home "style-2" footer) ---------- */
+.footer-section:not(.style-2) {
+    background-color: #0E1117;
+}
+
+.footer-section:not(.style-2) .footer-top-wrap {
+    background-color: #161B22;
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .content p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .rating-area .review span,
+.footer-section:not(.style-2) .footer-top-wrap .rating-area .rating span {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .author-and-social-area {
+    border-left-color: rgba(255, 255, 255, 0.08);
+    border-right-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .author-contact h6,
+.footer-section:not(.style-2) .footer-top-wrap .author-contact a {
+    color: #ffffff;
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .social-area h6 {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .social-area .social-list a i {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .subscribe-area h4 {
+    color: #ffffff;
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .subscribe-form {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .subscribe-form input {
+    color: #ffffff;
+}
+
+.footer-section:not(.style-2) .footer-top-wrap .subscribe-form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ---------- Process section ("02 03 04" steps — used on Services & About) ---------- */
+.process-slider-wrap .single-process .dot-and-step-no .dot::before {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.process-slider-wrap .single-process .dot-and-step-no .dot span {
+    background-color: #ffffff;
+}
+
+.process-slider-wrap .single-process .dot-and-step-no .step-no h2 {
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.25);
+}
+
+.process-slider-wrap .single-process:hover .dot-and-step-no .step-no h2 {
+    -webkit-text-stroke-color: var(--primary-color);
+}
+
+.process-slider-wrap .single-process .process-content h3 {
+    color: #ffffff;
+}
+
+.process-slider-wrap .single-process .process-content p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- About page hero text (Home1About) ---------- */
+.home1-about-section .section-top-content p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.home1-about-section .section-top-content p::before {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.home1-about-section .section-top-content a span {
+    color: #ffffff;
+}
+
+/* ---------- Contact page info panel (Home4 contact section on /contact) ---------- */
+.home4-contact-section .contact-wrapper .section-title h2 {
+    color: #ffffff;
+}
+
+.home4-contact-section .contact-wrapper svg {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.home4-contact-section .contact-info .single-contact .icon svg,
+.home4-contact-section .address .single-contact .icon svg {
+    fill: #ffffff;
+}
+
+.home4-contact-section .contact-info .single-contact .content span,
+.home4-contact-section .address .single-contact .content span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.home4-contact-section .contact-info .single-contact .content h6 a,
+.home4-contact-section .address .single-contact .content h6 a {
+    color: #ffffff;
+}
+
+/* ---------- Case study cards (Home1CaseStudy — used on About & Case Study pages) ---------- */
+.case-study-card .case-card-content {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.case-study-card .case-card-content h4 a {
+    color: #ffffff;
+}
+
+.case-study-card .case-card-content .read-more-btn,
+.case-study-card .case-card-content .read-more-btn svg {
+    color: rgba(255, 255, 255, 0.6);
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Blog cards (Home1blog — used on About & Blog pages) ---------- */
+.blog-card .card-content {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.blog-card .card-content .category a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.blog-card .card-content .blog-comment span {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.blog-card .card-content .blog-comment::before {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.blog-card .card-content h5 a {
+    color: #ffffff;
+}

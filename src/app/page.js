@@ -1,43 +1,48 @@
+"use client";
+import Home5about from "@/components/about/Home5about";
+import Home5banner from "@/components/banner/Home5banner";
+import Home5Benifit from "@/components/benifit-section/Home5Benifit";
+import Home5Blog from "@/components/blog-section/Home5Blog";
+import Home5Contact from "@/components/contact/Home5Contact";
+import Home5Feature from "@/components/feature/Home5Feature";
+import Home5Footer from "@/components/Footer/Home5Footer";
 import Header1 from "@/components/header/Header1";
-import Home1Service from "@/components/service/Home1Service";
-import Home1Feature from "@/components/feature/Home1Feature";
-import Home1About from "@/components/about/Home1About";
-import Home1ProcessSection from "@/components/process-section/Home1ProcessSection";
-import Home1Pricing from "@/components/pricing-plan-section/Home1Pricing";
-import Home1WhyChooseus from "@/components/why-choose-us-section/Home1WhyChooseus";
-import LogoSection1 from "@/components/logo-section/LogoSection1";
-import Home1Testimonial from "@/components/testimonial/Home1Testimonial";
-import Home1CaseStudy from "@/components/case-study-section/Home1CaseStudy";
-import Home1Faq from "@/components/faq-section/Home1Faq";
-import Home1Audtit from "@/components/audit-section/Home1Audtit";
-import Home1Contact from "@/components/contact/Home1Contact";
-import Home1Team from "@/components/team-section/Home1Team";
-import Home1blog from "@/components/blog-section/Home1blog";
-import Footer1 from "@/components/Footer/Footer1";
-import Home1Banner from "@/components/banner/Home1banner";
+import Home5Portfolio from "@/components/portfolio/Home5Portfolio";
+import Home5Pricing from "@/components/pricing-plan-section/Home5Pricing";
+import Home5Service from "@/components/service/Home5Service";
+import Home5Team from "@/components/team-section/Home5Team";
+import Home5Testimonial from "@/components/testimonial/Home5Testimonial";
+import Home5Testimonial2 from "@/components/testimonial/Home5Testimonial2";
+import Home5WhyChooseus from "@/components/why-choose-us-section/Home5WhyChooseus";
+import React, { useEffect } from "react";
 
+const DigitalMarketingPage = () => {
+  useEffect(() => {
+    document.body.classList.add("digital-marketing-home");
+    return () => {
+      document.body.classList.remove("digital-marketing-home");
+    };
+  }, []);
 
-
-export default function Home() {
   return (
     <>
-      <Header1 fluid="container" />
-      <Home1Banner />
-      <Home1Service />
-      <Home1Feature />
-      <Home1About />
-      <Home1Contact />
-      <Home1ProcessSection />
-      <Home1Pricing />
-      <Home1WhyChooseus />
-      <LogoSection1 />
-      <Home1Testimonial />
-      <Home1CaseStudy />
-      <Home1Faq />
-      <Home1Team />
-      <Home1Audtit />
-      <Home1blog />
-      <Footer1 />
+      <Header1 style="style-1 three" />
+      <Home5banner />
+      <Home5Feature />
+      <Home5about />
+      <Home5Service />
+      <Home5WhyChooseus />
+      <Home5Portfolio />
+      <Home5Benifit />
+      <Home5Testimonial />
+      <Home5Team />
+      <Home5Pricing />
+      <Home5Blog />
+      <Home5Testimonial2 />
+      <Home5Contact />
+      <Home5Footer />
     </>
   );
-}
+};
+
+export default DigitalMarketingPage;
