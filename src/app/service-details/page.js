@@ -6,7 +6,7 @@ import Home1ProcessSection from '@/components/process-section/Home1ProcessSectio
 import Home1Pricing from '@/components/pricing-plan-section/Home1Pricing'
 import Home1WhyChooseus from '@/components/why-choose-us-section/Home1WhyChooseus'
 import LogoSection1 from '@/components/logo-section/LogoSection1'
-import Footer1 from '@/components/Footer/Footer1'
+import Footer1 from "@/components/Footer/Home5Footer";
 export const metadata = {
   icons: {
     icon: "/assets/img/fav-icon.svg",

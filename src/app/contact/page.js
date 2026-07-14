@@ -1,7 +1,7 @@
 import React from 'react'
 import Header1 from '@/components/header/Header1'
 import Breadcrum from '@/components/common/Breadcrum'
-import Footer1 from '@/components/Footer/Footer1'
+import Footer1 from "@/components/Footer/Home5Footer";
 import SelectComponent from '../../components/common/SelectComponent'
 export const metadata = {
     icons: {
