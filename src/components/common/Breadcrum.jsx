@@ -3,7 +3,7 @@ import React from 'react'
 
 const Breadcrum = ({ pageTitle, pagename }) => {
     return (
-        <div className="breadcrumb-section" style={{ backgroundImage: 'url(/assets/img/inner-pages/breadcrumb-bg.png), linear-gradient(180deg, #FFE8DE 0%, #FFE8DE 100%)' }}>
+        <div className="breadcrumb-section" style={{ backgroundImage: 'linear-gradient(180deg, #161B22 0%, #0E1117 100%)' }}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
